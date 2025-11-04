@@ -173,6 +173,13 @@ public class BossLevel extends JPanel implements ActionListener, KeyListener {
                     for (int i = 0; i < 50; i++) {
                         explosionParticles.add(new Particle(boss.getCenterX(), boss.getCenterY()));
                     }
+                    // Load Level 3 after delay
+                    new javax.swing.Timer(2000, ev -> {
+                        parent.loadLevel3();
+                    }) {{
+                        setRepeats(false);
+                        start();
+                    }};
                 }
 
 
