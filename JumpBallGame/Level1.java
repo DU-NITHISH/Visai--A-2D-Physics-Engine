@@ -253,7 +253,7 @@ public class Level1 extends JPanel implements ActionListener, KeyListener {
 
             // After a short delay, load next level
             new javax.swing.Timer(1500, ev -> {
-                parent.loadNextLevel();
+                parent.loadBossLevel();
             }) {{
                 setRepeats(false); // ✅ run only once
                 start();
